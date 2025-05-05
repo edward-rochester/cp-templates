@@ -8,6 +8,7 @@ class prime_helper {
 
 public:
     prime_helper(int n) {
+        assert (n > 1);
         limit = n;
         sieve.resize(n + 1);
         fill(sieve.begin(), sieve.end(), true);
