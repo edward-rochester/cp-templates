@@ -12,8 +12,9 @@ long long binexp(long long a, long long b) {
     return res;
 }
 
+// We expect a >= 0, b >= 0 and M > 0 here
 long long binexp(long long a, long long b, long long M) {
-    assert(a >= 0 and b >= 0);
+    assert(a >= 0 and b >= 0 and M > 0);
     if (b == 0)
         return 1 % M;
     
